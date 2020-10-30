@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/mylib/.vs/mylib/v16
+/mylib/kousay101.lib/obj
+/mylib/kousay101.lib/bin/Debug/netstandard2.0
+/mylib/kousay101.tests/bin/Debug/netcoreapp3.1
+/mylib/kousay101.tests/obj
+/mylib/.vs/mylib/DesignTimeBuild
+/mylib/artifacts
+/mylib/kousay101.lib/bin
+/mylib/kousay101.lib/build
+/mylib/out
+/testnuget
