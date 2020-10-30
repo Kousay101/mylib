@@ -3,3 +3,7 @@
 ################################################################################
 
 /mylib/.vs/mylib/v16
+/mylib/kousay101.lib/obj
+/mylib/kousay101.lib/bin/Debug/netstandard2.0
+/mylib/kousay101.tests/bin/Debug/netcoreapp3.1
+/mylib/kousay101.tests/obj
