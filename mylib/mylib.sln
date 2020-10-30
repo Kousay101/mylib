@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kousay101.lib", "kousay101.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kousay101.tests", "kousay101.tests\kousay101.tests.csproj", "{E82214AC-D639-4B0F-B310-4F56F4209536}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{526A3DA7-6C21-4B35-9101-C3050564A59C}"
+	ProjectSection(SolutionItems) = preProject
+		build.bat = build.bat
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

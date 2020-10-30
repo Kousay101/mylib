@@ -7,3 +7,9 @@
 /mylib/kousay101.lib/bin/Debug/netstandard2.0
 /mylib/kousay101.tests/bin/Debug/netcoreapp3.1
 /mylib/kousay101.tests/obj
+/mylib/.vs/mylib/DesignTimeBuild
+/mylib/artifacts
+/mylib/kousay101.lib/bin
+/mylib/kousay101.lib/build
+/mylib/out
+/testnuget

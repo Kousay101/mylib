@@ -1,0 +1,32 @@
+﻿<Project>
+  <Import Project="build/dependencies.props"/>
+  <PropertyGroup>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>http://github.com/Kousay101/mylib</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Kousay101/mylib</RepositoryUrl>
+    <Authors>mylib Contributes</Authors>
+    <Company>mylib</Company>
+
+    <!-- Publish the repository URL in the built .nupkg (in the NuSpec <Repository> element) -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+
+    <!-- Embed source files that are not tracked by the source control manager in the PDB -->
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+
+    <!-- Build symbol package (.snupkg) to distribute the PDB containing Source Link -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SourceRoot Include="$(MSBuildThisFileDirectory)/"/>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="$(MicrosoftSourceLinkGithub)">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
